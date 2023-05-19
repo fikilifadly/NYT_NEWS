@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import noProfil from "../assets/noimage.jpg";
 
 const SearchCard = ({ searchData }) => {
   return (
@@ -18,7 +19,7 @@ const SearchCard = ({ searchData }) => {
                     src={
                       el.multimedia.length > 0
                         ? `https://static01.nyt.com/${el.multimedia[0].url}`
-                        : "/src/assets/noimage.jpg"
+                        : { noProfil }
                     }
                     alt={el.headline.main || ""}
                     title={el.headline.main || ""}

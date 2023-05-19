@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState, useRef } from "react";
+import logo from "../assets/fikilifadlylogo.png";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -23,7 +24,7 @@ const Header = () => {
         <nav className="w-10/12 mx-auto flex  md:py-5 py-2 justify-between">
           <div>
             <img
-              src="/src/assets/fikilifadlylogo.png"
+              src={logo}
               alt="FL"
               title="FL"
               className="md:w-[200px] md:h-[50px] w-[100px] h-[30px]"
